@@ -52,6 +52,6 @@ body{
    -webkit-user-select: none;
    user-select: none;
  }
- .btn:hover{
+ .btn.btnEffect{
    background-color: #868686;
  }
