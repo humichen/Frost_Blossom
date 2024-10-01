@@ -19,7 +19,7 @@ const initialstartY = h / 2 - 100; // 100為按鈕控制區的高度，為避免
 const initialLength = 200; // 初始層級的線條長度
 const initialAngle = 90; // 初始層級的線條角度
 const initialLevel = 1; // 初始層級設為第一層級
-const initialCircleWidth = 3; // 圓的初始線條寬度
+const initialCircleWidth = 5; // 圓的初始線條寬度
 const initialCircleRadius = 7; // 圓的初始半徑
 const radian = Math.PI / 180; // 角度換算
 
