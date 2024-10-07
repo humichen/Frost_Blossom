@@ -122,10 +122,7 @@ function drawCircles(level, prePos, angle, i = 0) {
   if (i > 5 || (level === 6 && i === 1)) return; //當第六層級已經畫過一個圈或第七層級的六個圈畫完後停止遞迴
 
   // 設定顏色
-  const r = 255; // R值固定
-  const g = 166 + 40 * (level - 6); // G值隨層級遞增
-  const b = 190 + 20 * (level - 6); // B值隨層級遞增
-  ctx.strokeStyle = `rgb(${r}, ${g}, ${b})`;
+  ctx.strokeStyle = "rgb(247,202,201)";
 
   // 設定線寬
   ctx.lineWidth = initialCircleWidth - 2 * (level - 6);
@@ -182,9 +179,9 @@ function drawStar(
   } else {
     ctx.lineTo(cx, cy - outerRadius); // 畫線回到星星的頂點
     ctx.closePath(); // 關閉路徑
-    ctx.strokeStyle = "yellow"; // 設置邊線顏色
+    ctx.strokeStyle = "rgb(255,255,0)"; // 設置邊線顏色
     ctx.stroke(); // 繪製實線
-    ctx.fillStyle = "yellow"; // 設置填滿顏色
+    ctx.fillStyle = "rgb(255,255,0)"; // 設置填滿顏色
     ctx.fill(); // 填充圖形
   }
 }
